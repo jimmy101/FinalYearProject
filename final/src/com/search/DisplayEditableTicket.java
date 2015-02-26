@@ -102,6 +102,15 @@ public class DisplayEditableTicket extends ActionSupport{
 
 
 
+	private int getTicket_id() {
+		// TODO Auto-generated method stub
+		return ticket_id;
+	}
+	
+	public void setTicket_id(int ticket_id) {
+		this.ticket_id = ticket_id;
+	}
+
 	public ArrayList<Ticket> getTicketList() {
 		return ticketList;
 	}
@@ -110,13 +119,7 @@ public class DisplayEditableTicket extends ActionSupport{
 		this.ticketList = ticketList;
 	}
 	
-	public int getTicket_id() {
-		return ticket_id;
-	}
 
-	public void setTicket_id(int ticket_id) {
-		this.ticket_id = ticket_id;
-	}
 
 }
 

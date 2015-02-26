@@ -60,10 +60,10 @@
 
 
 		<s:textfield name="assigneName" label="Assignee"></s:textfield>
-		<s:textfield name="status" label="Status"></s:textfield>
+		
 		<s:select label="ticket status"
 			list="#{'assigned':'Assigned', 'closed':'Closed', 'pending':'Pending', 'on hold':'On hold'}"
-			name="Department" />
+			name="status" />
 		<s:textarea name="statusupdate" label="Status update"></s:textarea>
 		<s:textarea name="resolution" label="Resolution"></s:textarea>
 

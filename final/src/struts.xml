@@ -26,12 +26,14 @@
    </package>
    
    <package name="com.register" extends="struts-default">
+   
    		<action name="register" 
          class="com.register.RegisterAction"
          method="execute">
          <result name="success">/register.jsp</result>
          <result name="error">/error.jsp</result>
       </action>
+      
       <action name="registerUser" 
          class="com.register.BLankRegisterFormAction"
          method="execute">
@@ -46,12 +48,21 @@
          <result name="error">/loginfail.jsp</result>
       </action>
       
-       <action name="upDateTicket" 
+        <action name="updateTicket" 
       class= "com.register.UpdateTicket"
          method="execute">
-         <result name="success">/success.jsp</result>
+         <result name="success">/updateMessage.jsp</result>
          <result name="error">/loginfail.jsp</result>
       </action>
+      
+         <action name="updateTicket22" 
+      class= "com.register.UpdateTicket"
+         method="execute">
+         <result name="success">/updateMessage.jsp</result>
+         <result name="error">/loginfail.jsp</result>
+      </action>
+      
+      
       
    
    </package>

@@ -15,37 +15,6 @@
 <h1>Pleas make a Choice</h1>
 
 
-<script type="text/javascript">
-        $.subscribe('chartHover', function(event, data) {
-    $("#topicsHover").text(event.originalEvent.pos.x.toFixed(2)+','+event.originalEvent.pos.y.toFixed(2));
-        });
-        $.subscribe('chartClick', function(event, data) {
-                var item = event.originalEvent.item;
-    if (item) {
-      $("#topicsClick").text("You clicked point " + item.dataIndex + " ("+item.datapoint[0]+","+item.datapoint[1]+") in " + item.series.label + ".");
-      event.originalEvent.plot.highlight(item.series, item.datapoint);
-    }
-        });
-</script>
-        <div id="topicsHover"></div>
-        <div id="topicsClick"></div>
-    <sjc:chart
-        id="chartObjects"
-        cssStyle="width: 600px; height: 400px;"
-        onClickTopics="chartClick"
-        onHoverTopics="chartHover"
-    >
-        <sjc:chartData
-                label="List with Objects"
-                list="objList"
-                listKey="myKey"
-                listValue="myValue"
-                points="{ show: true }"
-                lines="{ show: true }"
-                clickable="true"
-                hoverable="true"
-        />
-    </sjc:chart>
 
 <s:form action="launchBlankTicket">
 		<s:submit value="Create Ticket"></s:submit>

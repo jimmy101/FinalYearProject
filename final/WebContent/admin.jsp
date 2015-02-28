@@ -28,6 +28,10 @@
 	<s:form action="registerUser">
 		<s:submit value="Register user"></s:submit>
 	</s:form>
+	
+	<s:form action="viewStats">
+		<s:submit value="View Stats"></s:submit>
+	</s:form>
 
 </body>
 </html>

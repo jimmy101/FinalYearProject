@@ -387,6 +387,10 @@ public class TicketAction extends ActionSupport{
 	public void setTicketList(ArrayList<Ticket> ticketList) {
 		this.ticketList = ticketList;
 	}
+	
+	
+	     
+	
 
 }
 

@@ -44,7 +44,7 @@
        <action name="createTicket" 
       class= "com.register.TicketAction"
          method="execute">
-         <result name="success">/success.jsp</result>
+         <result name="success">/success.jsp</result>        
          <result name="error">/loginfail.jsp</result>
       </action>
       
@@ -118,9 +118,19 @@
          <result name="success">upDateTicket.jsp</result>
          <result name="error">/error.jsp</result>
       </action>
-      
-      
+               
+   </package>
    
+    <package name="com.stats" extends="struts-default">
+   
+      <action name="viewStats" 
+         class="com.stats.StatsAction"
+         method="execute">
+         <result name="success">stats.jsp</result>
+         <result name="error">/error.jsp</result>
+      </action>
+            
+               
    </package>
    
    
